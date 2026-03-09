@@ -1,22 +1,67 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Google AI Studio App</title>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XTLQFV4C7F"></script>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>에스바디 휘트니스 탑동점</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-
-      gtag('config', 'G-XTLQFV4C7F');
+      gtag('config', 'G-XXXXXXXXXX');
     </script>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.tsx"></script>
-  </body>
-</html>
+</head>
+<body>
+    <div class="app-container">
+        <!-- Hero Section -->
+        <section class="hero" id="hero">
+            <div class="hero-overlay"></div>
+            <div class="hero-content">
+                <p class="sub-copy">운동에 진심이 되는 공간</p>
+                <h1 class="main-copy">에스바디 휘트니스 탑동점</h1>
+                <p class="brand-name">전문가용 머신 21종・33년 경력 관장 무료 코칭</p>
+                
+                <div class="cta-container">
+                    <span class="cta-subtext">당근 한정 특가!</span>
+                    <a href="https://booking.naver.com/booking/6/bizes/834658" class="cta-button" id="cta-top">오늘특가! 1만원에 체험하기</a>
+                </div>
+            </div>
+        </section>
 
+        <!-- USP Summary -->
+        <section class="usp-summary">
+            <h2 class="section-title">보법이 다른 헬스장, 에스바디</h2>
+            <p class="section-subtitle">숫자부터 다른 '진짜 운동'을 위한 공간</p>
+            <div class="usp-grid">
+                <div class="usp-item">
+                    <div class="icon">🏋️</div>
+                    <h3>21종</h3>
+                    <p>부위별 세분화 21종 머신구성</p>
+                </div>
+                <div class="usp-item">
+                    <div class="icon">👨‍🏫</div>
+                    <h3>33년</h3>
+                    <p>33년 경력 관장 상시 무료 코칭</p>
+                </div>
+                <div class="usp-item">
+                    <div class="icon">📍</div>
+                    <h3>0원</h3>
+                    <p>추가금 없는 전지점 이용</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Outro -->
+        <section class="outro">
+            <div class="map-container">
+                <img src="https://raw.githubusercontent.com/GardenPotato/S-Body_Top/refs/heads/main/outro.webp" alt="Map">
+            </div>
+            <a href="https://booking.naver.com/booking/6/bizes/834658" target="_blank" class="cta-button" id="cta-bottom">체험 후 등록 시, 1만원 즉시 환급</a>
+        </section>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

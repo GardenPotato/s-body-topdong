@@ -6,6 +6,15 @@ import { Monitor, Smartphone } from 'lucide-react';
 
 export default function App() {
   const [viewMode, setViewMode] = useState<'preview' | 'admin'>('admin');
+  
+  // 프로덕션 빌드(Netlify 등)에서는 랜딩 페이지만 보여줍니다.
+  if (import.meta.env.PROD) {
+    return (
+      <ContentProvider>
+        <LandingPage />
+      </ContentProvider>
+    );
+  }
 
   return (
     <ContentProvider>
